@@ -41,11 +41,31 @@
       padding-bottom: 5px;
     }
 
-    .service {
+    .accordion {
+      background-color: #282c34;
+      color: #ffffff;
+      cursor: pointer;
       padding: 15px;
-      margin: 10px 0;
-      border: 1px solid #555;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      font-size: 1.5rem;
       border-radius: 5px;
+      margin-bottom: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .accordion:hover {
+      background-color: #3a3f51;
+    }
+
+    .accordion-content {
+      padding: 15px;
+      display: none;
+      background-color: #2b2b40;
+      border-radius: 5px;
+      margin-bottom: 10px;
     }
 
     .service h3 {
@@ -91,55 +111,107 @@
   <h1>Izumi Services BloxFruits</h1>
 </header>
 
-<section id="normal-raids">
-  <h2>ℕ𝕆ℝ𝕄𝔸𝕃 ℝ𝔸𝕀𝔻𝕊</h2>
-  <p>
-    ALL KIND OF PAYMENT ACCEPTED FOR NORMAL RAIDS AND CAN DO ALL NORMAL RAID (PRICES VARY IF ITS BUDDHA RAID)
-  </p>
+  <section id="services">
+    <h2>Only 10 services x day (5 in the morning, 5 in the afternoon)</h2>
+
+
+<section id="raids">
+  <h2>ℝ𝔸𝕀𝔻𝕊</h2>
+
+  <!-- Normal Raids Accordion -->
+  <button class="accordion">ℕ𝕠𝕣𝕞𝕒𝕝 ℝ𝕒𝕚𝕕𝕤</button>
+  <div class="accordion-content">
+    <p>
+      ALL KIND OF PAYMENT ACCEPTED FOR NORMAL RAIDS AND CAN DO ALL NORMAL RAID (PRICES VARY IF ITS BUDDHA RAID)
+    </p>
+  </div>
+
+  <!-- Advanced Raids Accordion -->
+  <button class="accordion">𝔸𝕕𝕧𝕒𝕟𝕔𝕖𝕕 ℝ𝕒𝕚𝕕𝕤</button>
+  <div class="accordion-content">
+    <div class="service">
+      <h3>PHOENIX</h3>
+      <ul>
+        <li>1 RAID = SHADOW , PORTAL or BUDDHA</li>
+        <li>2 RAID = CONTROL , SPIRIT or VENOM</li>
+        <li>3 RAID = TREX or DOUGH</li>
+        <li>6 RAID = DRAGON or LEO (WE CAN NEGOTIATE)</li>
+      </ul>
+    </div>
+    <div class="service">
+      <h3>DOUGH</h3>
+      <ul>
+        <li>1 RAID = SHADOW , PORTAL or BUDDHA</li>
+        <li>2 RAID = CONTROL , SPIRIT , VENOM or MAMMOTH</li>
+        <li>3 RAID = TREX or DOUGH</li>
+        <li>6 RAID = DRAGON or LEO (WE CAN NEGOTIATE)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Law/Order Raids Accordion -->
+  <button class="accordion">𝕃𝕒𝕨/𝕆𝕣𝕕𝕖𝕣 ℝ𝕒𝕚𝕕𝕤</button>
+  <div class="accordion-content">
+    <div class="service">
+      <ul>
+        <li>4 RAIDS = RUMBLE , SHADOW or PORTAL</li>
+        <li>4 RAIDS = BUDDHA or BLIZZARD</li>
+        <li>5 RAIDS = CONTROL</li>
+        <li>7 RAIDS = VENOM , SPIRIT or MAMMOTH</li>
+        <li>12 RAIDS = DOUGH or TREX</li>
+        <li>TIL YOU GET THE COREBRAIN = DRAGON or LEO (We can negotiate with this)</li>
+      </ul>
+    </div>
+  </div>
+
+  <section id="sea events">
+    <h2>𝕊𝕖𝕒 𝔼𝕧𝕖𝕟𝕥𝕤</h2>
+
+    <!-- Normal Raids Accordion -->
+    <button class="accordion">𝕊𝕖𝕒 𝔼𝕧𝕖𝕟𝕥𝕤</button>
+    <div class="accordion-content">
+      <p>
+        Coming soon...
+      </p>
+    </div>
+
+
+    <section id="hard core items">
+      <h2>ℍ𝕒𝕣𝕕ℂ𝕠𝕣𝕖 𝕀𝕥𝕖𝕞</h2>
+
+      <!-- Normal Raids Accordion -->
+      <button class="accordion">ℍ𝕒𝕣𝕕ℂ𝕠𝕣𝕖 𝕀𝕥𝕖𝕞</button>
+      <div class="accordion-content">
+        <p>
+          Coming soon...
+        </p>
+      </div>
+
+  
 </section>
 
-<section id="advanced-raids">
-  <h2>𝔸𝔻𝕍𝔸ℕℂ𝔼 ℝ𝔸𝕀𝔻𝕊</h2>
-  <div class="service">
-    <h3>PHOENIX</h3>
-    <ul>
-      <li>1 RAID = SHADOW , PORTAL or BUDDHA</li>
-      <li>2 RAID = CONTROL , SPIRIT or VENOM</li>
-      <li>3 RAID = TREX or DOUGH</li>
-      <li>6 RAID = DRAGON or LEO (WE CAN NEGOTIATE)</li>
-    </ul>
-  </div>
-  <div class="service">
-    <h3>DOUGH</h3>
-    <ul>
-      <li>1 RAID = SHADOW , PORTAL or BUDDHA</li>
-      <li>2 RAID = CONTROL , SPIRIT , VENOM or MAMMOTH</li>
-      <li>3 RAID = TREX or DOUGH</li>
-      <li>6 RAID = DRAGON or LEO (WE CAN NEGOTIATE)</li>
-    </ul>
-  </div>
-</section>
+    <section id="checkout">
+      <div class="checkout-message">
+        FOR BUY THE PRODUCTS U GO ON MY DISCORD SERVER AND CREATE A TICKET (BUY SUPPORT)
+      </div>
+      <a href="https://discord.gg/BywPD9GWZq" class="discord-button">Discord Server (CLICK THIS BUTTON FOR JOIN INTO MY DISCORD SERVER)</a>
+      <br>
+      <a href="https://www.roblox.com/it/users/3526751334/profile" class="discord-button" style="background-color: #ff4500;">Roblox Friend (CLICK THIS BUTTON FOR ADD ME ON ROBLOX)</a>
+    </section>
 
-<section id="law-order-raids">
-  <h2>𝕃𝔸𝕎/𝕆ℝ𝔻𝔼ℝ ℝ𝔸𝕀𝔻𝕊</h2>
-  <div class="service">
-    <ul>
-      <li>4 RAIDS = RUMBLE , SHADOW or PORTAL</li>
-      <li>4 RAIDS = BUDDHA or BLIZZARD</li>
-      <li>5 RAIDS = CONTROL</li>
-      <li>7 RAIDS = VENOM , SPIRIT or MAMMOTH</li>
-      <li>12 RAIDS = DOUGH or TREX</li>
-      <li>TIL YOU GET THE COREBRAIN = DRAGON or LEO (We can negotiate with this)</li>
-    </ul>
-  </div>
-</section>
 
-<section id="checkout">
-  <div class="checkout-message">
-    FOR BUY THE PRODUCTS U GO ON MY DISCORD SERVER AND U CREATE A TICKET (BUY SUPPORT)
-  </div>
-  <a href="https://discord.gg/BywPD9GWZq" class="discord-button">Discord Server (CLICK THIS BUTTON FOR JOIN INTO MY DISCORD SERVER)</a>
-</section>
+
+
+<script>
+  // JavaScript for Accordion functionality
+  const accordions = document.querySelectorAll('.accordion');
+  accordions.forEach(accordion => {
+    accordion.addEventListener('click', () => {
+      const content = accordion.nextElementSibling;
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
 
 </body>
 </html>
